@@ -42,11 +42,12 @@ function testBucketingByHealth() {
     assert(counts["healthy"] == 2);
     assert(counts["exchange"] == 3);
     assert(counts["failed"] == 1);
+    console.log("Done counting :)");
   }catch (AssertionError) {
     console.log('Assertion failed');
   } 
 
-  console.log("Done counting :)");
+  //Print the results
   console.log('Hence, the batteries are bucketed as follows:');
   console.log('Healthy: ' + counts["healthy"]);
   console.log('Exchange: ' + counts["exchange"]);
